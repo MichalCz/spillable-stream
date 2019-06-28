@@ -1,0 +1,32 @@
+{
+  "name": "spillable-stream",
+  "version": "1.0.0",
+  "description": "A simple passthough stream that spills to disk automagicaly.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.6.0"
+  },
+  "scripts": {
+    "lint": "eslint index.js concat.js",
+    "tape": "nodeunit-tape test/buffer-mode.js",
+    "test": "npm run lint && npm run tape"
+  },
+  "author": "Signicode <opensource@signicode.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/signicode/spillable-stream.git"
+  },
+  "types": "./index.d.ts",
+  "devDependencies": {
+    "@types/node": "^12.0.10",
+    "eslint": "^6.0.1",
+    "eslint-config-scramjet": "^2.0.0",
+    "nodeunit-tape-compat": "^1.3.21"
+  },
+  "dependencies": {
+    "infinite-sequence-generator": "^1.1.0",
+    "mkpath": "^1.0.0",
+    "scramjet": "^4.25.2"
+  }
+}
