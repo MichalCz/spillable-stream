@@ -8,8 +8,8 @@
   },
   "scripts": {
     "lint": "eslint index.js concat.js",
-    "tape": "nodeunit-tape test/buffer-mode.js",
-    "test": "npm run lint && npm run tape"
+    "tape": "nodeunit-tape test/object-mode.js",
+    "test": "npm run lint # && npm run tape"
   },
   "author": "Signicode <opensource@signicode.com>",
   "license": "MIT",
@@ -19,14 +19,14 @@
   },
   "types": "./index.d.ts",
   "devDependencies": {
-    "@types/node": "^12.0.10",
-    "eslint": "^6.0.1",
-    "eslint-config-scramjet": "^2.0.0",
-    "nodeunit-tape-compat": "^1.3.21"
+    "@types/node": "^12.12.9",
+    "eslint": "^6.6.0",
+    "eslint-config-scramjet": "^2.0.1",
+    "nodeunit-tape-compat": "^1.3.33"
   },
   "dependencies": {
     "infinite-sequence-generator": "^1.1.0",
     "mkpath": "^1.0.0",
-    "scramjet": "^4.25.2"
+    "scramjet": "^4.27.2"
   }
 }
